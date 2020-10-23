@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8" />
+<title></title>
+</head>
+<body>
+<h2>Welcome To Majiaxueyuan For Study</h2>
+ 
+  <input type="text" th:value="${mobile}" />
+    <img th:src="@{/img/tp.jpeg}" />
+  <table>
+     <tr>
+       <th> code </th>
+     </tr>
+
+     <tr th:each="l : ${list}">
+        <td th:text="${l}">
+        </td>
+     </tr>   
+        
+  </table>
+
+<li th:text="${name}"> </li>
+</body>
+</html>
